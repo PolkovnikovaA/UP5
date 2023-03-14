@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".maska_vertikal">
+
+    <RelativeLayout
+
+        android:id="@+id/Horiz_fon"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/maska_ver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Vertikal_Image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/Vertikal_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/Vertikal_Image"
+
+            android:text="Заголовок блока"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:id="@+id/Vertikal_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Vertikal_Title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/Vertikal_Image"
+            android:text="Кратенькое описание блока с двумя строчками"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <Button
+            android:id="@+id/podrobnee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Vertikal_Description"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/Vertikal_Image"
+            android:backgroundTint="#253334"
+            android:padding="10dp"
+            android:text="Подробнее"
+            android:textColor="@color/white"
+            app:cornerRadius="10dp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
